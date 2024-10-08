@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Costa Bock</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+        <header>
+            <div class="caixa">
+                <br>
+                <img src="assets/img/logo.png" width ="230px">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="projetos.html">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<div class="containerr">
+    <section class="header">
+        <h2>Calcular IMC</h2>
+    </section>
+
+    <form id="imcForm" class="form">
+        <div class="form-content">
+            <label for="peso">Digite seu peso (em kg):</label>
+            <input type="number" id="peso" placeholder="Peso em kg" required />
+            <a class="error-message" style="display:none;">ERRO</a>
+        </div>
+
+        <div class="form-content">
+            <label for="altura">Digite sua altura (em metros):</label>
+            <input type="number" step="0.01" id="altura" placeholder="Altura em metros" required />
+            <a class="error-message" style="display:none;">ERRO</a>
+        </div>
+
+        <button type="submit">Calcular IMC</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px;"></div>
+</div>
+
+<script src="./imc.js"></script>
+
+</body>
+
+</html>
